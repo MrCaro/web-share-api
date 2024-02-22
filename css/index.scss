@@ -16,6 +16,24 @@ body {
     }
   }
 
+  #btnShareURL {
+    display: block;
+  }
+
+  #btnCopyURL {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    #btnShareURL {
+      display: none;
+    }
+
+    #btnCopyURL {
+      display: block;
+    }
+  }
+
   p {
     color: red
   }

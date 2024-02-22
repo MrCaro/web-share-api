@@ -17,6 +17,23 @@ body button:active {
   background-color: darkgray;
 }
 
+body #btnShareURL {
+  display: block;
+}
+
+body #btnCopyURL {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  body #btnShareURL {
+    display: none;
+  }
+  body #btnCopyURL {
+    display: block;
+  }
+}
+
 body p {
   color: red;
 }
