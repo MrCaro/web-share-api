@@ -15,6 +15,10 @@ const btn = document.querySelector("button")
 const btnURL = document.getElementById("btnCopyURL")
 const resultPara = document.querySelector(".result")
 
+navigator.share 
+  ? (btnURL.style.display = 'none') 
+  : (btn.style.display = 'none') 
+
 // Share must be triggered by “user activation”
 btn.addEventListener("click", async () => {
   if (navigator.share) {
